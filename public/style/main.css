@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #000;
+    color: rgba(7, 212, 255, 1)
+}
+
+a {
+    color: rgba(255, 255, 255, 0.75);
+    text-shadow: 0 0 3px rgba(7, 212, 255, 1);
+}
+
+#spreadBody {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    margin-top: 5rem;
+    border: solid 1px #5555558e;
+    border-top: solid 4px #5555558e;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+    box-shadow: inset 0 0 10px rgba(7, 212, 255, 1), 0 0 4px #fff;
+    border-radius: 0.2rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    min-height: 100%;
+    height: 100%;
+
+}
+
+.storage-item-label-data {
+    width: 90%;
+    border: solid 1px rgba(7, 212, 255, 1);
+    box-shadow: inset 0 0 10px rgba(7, 212, 255, 1), 0 0 4px #fff;
+    backdrop-filter: blur(8px);
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+.storage-item-label-data h3 {
+    border-bottom: solid 1px #fff;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    padding: 0.15rem;
+}
+.storage-item-label-data h6, .storage-item-label-data span {
+    color: #fff;
+    font-weight: lighter;
+    font-size: 0.85rem;
+}
+.storage-item-label-data span:is(.fragile) {
+    color: orangered;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    font-weight: bold;
+}
+.fragile {
+}
+.not-fragile {
+    display: none;
+}
+.storage-item-label-data p {
+    font-weight: lighter;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
