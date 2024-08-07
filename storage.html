@@ -6,9 +6,11 @@
     <title>SpreadStorage</title>
     <link rel="icon" type="image/png" href="./public/media/image/system/logo_2a1a1a.png">
 
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
     <link rel="stylesheet" href="./public/style/main.css">
     <script type="module" src="./public/logic/main.js" defer></script>
     <script type="module" src="./public/logic/storage.js" defer></script>
+    <script type="module" src="./public/logic/code-scanner.js" defer></script>
 </head>
 <body>
     <h1>SpreadStorage Storage</h1>
@@ -22,8 +24,25 @@
         </div>
     </div>
 
+    <div id="codeScanner">
+        <h3>WideSpread QR Scanner</h3>
+        <div id="qrResult"></div>
+        <div class="qr-scanner-visual">
+            <div class="qr-scanner-start-button">
+                <div class="blur-overlay"></div>
+                <img class="qr-icon" src="./public/media/image/system/qr-scanner-blue.png" alt="QR Scanner Icon">
+            </div>
+            <div class="qr-reader" id="reader" style="width: 300px;"></div>
+        </div>
+    </div>
+
+
     <div id="spreadBody">
     
     </div>
+
+
+
+
 </body>
 </html>

@@ -166,3 +166,58 @@ a {
     border: solid 1px rgba(7, 212, 255, 1);
     border-radius: 1rem;
 }
+
+
+#codeScanner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+    border-top: solid 3px rgba(7, 212, 255, 1);
+    border-bottom: solid 3px rgba(7, 212, 255, 1);
+}
+
+.qr-scanner-visual {
+    position: relative;
+}
+.qr-scanner-start-button {
+    width: 100%;
+    height: 100%;
+    z-index: 105;
+    position: absolute;
+}
+.qr-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    max-width: 100px;
+    max-height: 100px;
+}
+.qr-reader {
+    width: 300px;
+    max-height: 300px;
+    margin-bottom: 1rem;
+}
+.qr-reader video {
+    border-radius: 1rem;
+
+}
+
+.blur-overlay {
+    position: absolute;
+    border-radius: 1rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 99;
+}
