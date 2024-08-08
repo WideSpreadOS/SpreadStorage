@@ -210,6 +210,7 @@ a {
 
 
 #codeScanner {
+    background-color: #fff;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -219,10 +220,15 @@ a {
     margin-top: 3rem;
     margin-bottom: 3rem;
     padding-top: 1rem;
+    padding-bottom: 3rem;
     border-top: solid 3px rgba(7, 212, 255, 1);
     border-bottom: solid 3px rgba(7, 212, 255, 1);
+    box-shadow: inset 0 0 12px rgba(7, 212, 255, 1);
 }
 
+#codeScanner h3 {
+    text-shadow: 0 0 2px #000000d2, 0 0 12px #000000ad;
+}
 .qr-scanner-visual {
     position: relative;
 }
@@ -242,18 +248,25 @@ a {
     max-height: 100px;
 }
 .qr-reader {
+    opacity: 0.75;
     width: 300px;
     max-height: 300px;
     margin-bottom: 1rem;
+    border: solid 2px rgba(7, 212, 255, 1);
+    border-radius: 0.75rem;
+    overflow: hidden;
 }
 .qr-reader video {
-    border-radius: 1rem;
+    max-height: 300px;
+    height: 300px;
+    max-width: 300px;
+    object-fit: cover;
 
 }
 
 .blur-overlay {
     position: absolute;
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     top: 0;
     left: 0;
     width: 100%;

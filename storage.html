@@ -49,6 +49,21 @@
             </ol>
         </div>
 
+    <script>
+        
+        setTimeout(() => {switchCornerColor()}, "3000")
 
+
+        function switchCornerColor() {
+            const
+                qrShaded = document.getElementById('qr-shaded-region'),
+                qrShadedCorners = qrShaded.querySelectorAll('div')
+        
+            qrShadedCorners.forEach(corner => {
+                corner.style.backgroundColor = 'rgba(7, 212, 255, 1)'
+            })
+            
+        }
+    </script>
 </body>
 </html>
